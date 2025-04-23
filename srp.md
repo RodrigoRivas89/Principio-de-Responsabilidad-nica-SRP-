@@ -1,2 +1,5 @@
 # Principio de Responsabilidad Única (SRP)
-Cada clase
+El proposito de este principio es que cada clase debe tener una sola responsabilidad, su tipo de principio solid es que esta relacionado con la cohesión (es decir, que los elementos de una clase estén fuertemente relacionados entre sí). El problema que hay es que 
+toda la gestion de turnos se maneja en una agenda física, este principio lo soluciona dividiendo las responsabilidades de la gestion de turnos para que hayan diferentes acciones hechas por diferentes clases para un solo proposito
+### Motivacion
+El problema que hay es que toda la gestion de turnos se maneja en una agenda fisica, teniendo problemas como tener que anotar todo en hojas, incluido las modificaciones y cancelaciones de los turnos, por lo que pueden perderse y generar confusion al estar buscando en un sinfin de hojas, el SRP lo soluciona dividiendo las responsabilidades de la gestion de turnos para que hayan diferentes acciones hechas por diferentes clases para un solo proposito, que seria la gestion de turnos en este caso, las responsabilidades se dividen en: Registrar un turno (su clase seria GestorDeTurnos), Consultar disponibilidad (su clase seria CalendarioDeDisponibilidad), Notificar al paciente (su clase seria NotificadorDeTurnos) y Registrar cambios (su clase seria HistorialDeTurnos)
