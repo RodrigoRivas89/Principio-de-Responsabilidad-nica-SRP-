@@ -1,1 +1,0 @@
-# Principio-de-Responsabilidad-nica-SRP-
